@@ -1,0 +1,10 @@
+1. Login to esxcli
+
+2. Determine what physical link the vmk associated to the host profile sits
+2a. #> esxtop (then hit 'n')
+
+3. Determine ip associted to TEP vmk
+3a. #> esxcfg-vmknic -l
+
+4.  Ping test from another ESXi host to ip from step 3
+4a. #> vmkping ++netstack=vxlan 192.168.10.1 -c 999
