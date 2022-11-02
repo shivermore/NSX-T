@@ -1,0 +1,3 @@
+#> get logical-routers
+#> vrf 0
+#> get int     #this will list interface info with IP and MAC
