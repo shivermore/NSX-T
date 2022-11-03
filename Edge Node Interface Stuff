@@ -1,3 +1,8 @@
 #> get logical-routers
 #> vrf 0
-#> get int     #this will list interface info with IP and MAC
+#(vrf)> get int     #this will list interface info with IP and MAC
+#(vrf)> exit
+#> get logical-routers
+#> vrf 17
+#(vrf)> get int
+#(vrf)> ping 10.50.0.1 source 10.50.0.101
